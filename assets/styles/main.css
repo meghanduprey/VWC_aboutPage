@@ -12,19 +12,20 @@ body {
 }
 
 main {
+  height: 100vh;
 }
-.about {
+.flex__column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.about img {
+.flex__column img {
 }
-.about h2 {
+.flex__column h2 {
   text-align: center;
 }
-.about p {
+.flex__column p {
   line-height: 1.6;
   margin: 0 auto;
   width: 50%;
@@ -35,12 +36,12 @@ main {
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.responsive {
+.video__responsive {
   max-width: 100%;
   height: auto;
 }
 @media screen and (max-width: 600px) {
-  .about p {
+  .flex p {
     width: 100%;
     margin: 0 auto;
   }
