@@ -1,9 +1,16 @@
 nav {
   text-align: center;
 }
+nav ul {
+  background-color: #363433;
+  margin: 0;
+  padding: 10px 20px;
+}
 nav li {
   display: inline-block;
 }
 nav a {
+  color: #fff;
+  font-size: 18px;
   text-decoration: none;
 }

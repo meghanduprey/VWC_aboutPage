@@ -4,9 +4,13 @@
 }
 /* MEGHAN'S STYLES */
 body {
+  background-color: #d9ca50;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 .wrapper {
+  background-color: #dfdbd8;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   width: 80%;
 }
@@ -21,20 +25,30 @@ main {
   align-items: center;
 }
 .flex__column img {
+  margin-bottom: 40px;
 }
 .flex__column h2 {
   text-align: center;
 }
 .flex__column p {
+  background-color: #424242;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
   line-height: 1.6;
   margin: 0 auto;
+  padding: 40px;
+  text-align: left;
   width: 50%;
+}
+.flex__column a {
+  color: #e86890;
 }
 .media video,
 .media img {
   border: 3px solid #000;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .video__responsive {
   max-width: 100%;
