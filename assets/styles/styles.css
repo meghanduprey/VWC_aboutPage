@@ -1,0 +1,47 @@
+.profile-pic img {
+  border-radius: 50%;
+  border: solid 1px cadetblue;
+}
+/* MEGHAN'S STYLES */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+main {
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about img {
+}
+.about h2 {
+  text-align: center;
+}
+.about p {
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 50%;
+}
+.media video,
+.media img {
+  border: 3px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .about p {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
