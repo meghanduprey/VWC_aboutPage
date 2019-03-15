@@ -30,10 +30,8 @@ main {
 .flex__column h2 {
   text-align: center;
 }
-.flex__column p {
+.flex__column article {
   background-color: #424242;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
   color: #fff;
   line-height: 1.6;
   margin: 0 auto;
@@ -55,8 +53,19 @@ main {
   height: auto;
 }
 @media screen and (max-width: 600px) {
-  .flex p {
+  body {
+    height: 100vh;
+  }
+  .wrapper {
+    box-shadow: none;
     width: 100%;
-    margin: 0 auto;
+  }
+  .flex__column article {
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .flex__column p {
+    margin: 10px;
   }
 }
