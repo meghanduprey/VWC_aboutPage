@@ -1,22 +1,23 @@
-.profile-pic img {
-  border-radius: 50%;
-  border: solid 1px cadetblue;
-}
 /* MEGHAN'S STYLES */
 body {
   background-color: #d9ca50;
   font-family: "Montserrat", sans-serif;
+  min-height: 100%;
   margin: 0;
+  padding: 0;
 }
 .wrapper {
   background-color: #dfdbd8;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
   margin: 0 auto;
   width: 80%;
 }
 
 main {
-  height: 100vh;
+  overflow: auto;
+  padding-bottom: 180px;
+  height: 100%;
 }
 .flex__column {
   display: flex;
@@ -34,7 +35,7 @@ main {
   background-color: #424242;
   color: #fff;
   line-height: 1.6;
-  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 40px;
   text-align: left;
   width: 50%;
@@ -52,6 +53,7 @@ main {
   max-width: 100%;
   height: auto;
 }
+/* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
   body {
     height: 100vh;
