@@ -1,4 +1,7 @@
 /* MEGHAN'S STYLES */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #d9ca50;
   font-family: "Montserrat", sans-serif;
@@ -8,12 +11,9 @@ body {
 }
 .wrapper {
   background-color: #dfdbd8;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
-  min-height: 100vh;
-  margin: 0 auto;
-  width: 80%;
+  box-shadow: none;
+  width: 100%;
 }
-
 main {
   overflow: auto;
   padding-bottom: 180px;
@@ -22,6 +22,7 @@ main {
 .flex__column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -31,14 +32,19 @@ main {
 .flex__column h2 {
   text-align: center;
 }
-.flex__column article {
+.flex__column .article__bg {
   background-color: #424242;
+
+  border-radius: 0;
   color: #fff;
   line-height: 1.6;
   margin-bottom: 30px;
   padding: 40px;
-  text-align: left;
-  width: 50%;
+  padding: 0;
+  width: 100%;
+}
+.flex__column p {
+  margin: 10px;
 }
 .flex__column a {
   color: #e86890;
@@ -54,20 +60,37 @@ main {
   height: auto;
 }
 /* MEDIA QUERIES */
-@media screen and (max-width: 600px) {
-  body {
-    height: 100vh;
-  }
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+/* BREAK POINT */
+@media only screen and (min-width: 600px) {
   .wrapper {
-    box-shadow: none;
-    width: 100%;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 90%;
   }
-  .flex__column article {
-    border-radius: 0;
-    padding: 0;
-    width: 100%;
+  .flex__column .article__bg {
+    border-radius: 5px;
+    width: 80%;
   }
-  .flex__column p {
-    margin: 10px;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .flex__column .article__bg {
+    width: 60%;
   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
 }
